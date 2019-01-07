@@ -1,23 +1,24 @@
 import React, { Component } from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
+import Colors from "../resources/Colors";
+import Images from "../resources/Images";
 
 const itemStyle = StyleSheet.create({
-
   parentContainerStyle: {
-    display: "flex"
-    //Your code here
+    display: "flex",
+    backgroundColor: Colors.bgColors.itemBgColor,
+    margin: "1%"
   },
   parentContainerStyle2: {
-    //Your code here
+    //your code here
   },
   imageStyle: {
     width: 120,
     height: 120,
-    //Your code here
+    //your code here
   },
   titleStyle: {
-    color: "#000000",
-    //Your code here
+    color: Colors.textColors.black
   }
 });
 
@@ -27,7 +28,7 @@ class FlexComponent extends React.Component {
       <View style={itemStyle.parentContainerStyle}>
         <Image
           style={itemStyle.imageStyle}
-          source={require("../img/goku.png")}
+          source={Images.characters.goku}
           resizeMode="contain"
         />
         <View style={itemStyle.parentContainerStyle2}>
