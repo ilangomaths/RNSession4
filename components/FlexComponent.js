@@ -6,18 +6,23 @@ import Images from "../resources/Images";
 const itemStyle = StyleSheet.create({
   parentContainerStyle: {
     display: "flex",
+    flexDirection: "row",
     backgroundColor: Colors.bgColors.itemBgColor,
     margin: "1%"
   },
   parentContainerStyle2: {
-    //your code here
+    flexGrow: 1,
+    width: 0,
+    flexDirection: "column",
+    justifyContent: "center"
   },
   imageStyle: {
+    alignSelf: "center",
     width: 120,
-    height: 120,
-    //your code here
+    height: 120
   },
   titleStyle: {
+    alignSelf: "flex-start",
     color: Colors.textColors.black
   }
 });
