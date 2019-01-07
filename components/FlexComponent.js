@@ -2,29 +2,22 @@ import React, { Component } from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 
 const itemStyle = StyleSheet.create({
-  /*
-    Your code here
-    */
+
   parentContainerStyle: {
-    display: "flex",
-    flexDirection: "row",
-    backgroundColor: "#ffffff",
-    margin: "1%"
+    display: "flex"
+    //Your code here
   },
   parentContainerStyle2: {
-    flexGrow: 1,
-    width: 0,
-    flexDirection: "column",
-    justifyContent: "center"
+    //Your code here
   },
   imageStyle: {
-    alignSelf: "center",
     width: 120,
-    height: 120
+    height: 120,
+    //Your code here
   },
   titleStyle: {
-    alignSelf: "flex-start",
-    color: "#000000"
+    color: "#000000",
+    //Your code here
   }
 });
 
