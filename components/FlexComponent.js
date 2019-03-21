@@ -7,10 +7,15 @@ const itemStyle = StyleSheet.create({
   parentContainerStyle: {
     display: "flex",
     backgroundColor: Colors.bgColors.itemBgColor,
-    margin: "1%"
+    margin: "1%",
+    flexDirection: "row"
   },
   parentContainerStyle2: {
     //your code here
+    flexDirection: "column",
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    flex:1
   },
   imageStyle: {
     width: 120,
@@ -33,7 +38,7 @@ class FlexComponent extends React.Component {
         />
         <View style={itemStyle.parentContainerStyle2}>
           <Text style={itemStyle.titleStyle}>
-            "I could go one step farther if I wanted to"
+            "I could go one step farther if I wanted to do something"
           </Text>
           <Text style={itemStyle.titleStyle}>Goku</Text>
         </View>
